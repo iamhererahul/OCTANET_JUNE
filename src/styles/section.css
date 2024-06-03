@@ -1,0 +1,16 @@
+.section .cards {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.section .cards .card {
+  border: 2px solid black;
+  margin-top: 20px;
+}
+.cards .card .card-body .card-text {
+  font-size: 20px;
+  text-align: center;
+}
+.cards .card .card-body .card-title {
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; /* Dark background for space color */
+}
+
+.main_content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.animation_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay_content {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  color: black; /* Text color set to black */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay_content h1 {
+  margin: 30px;
+  font-size: 80px;
+  color: white; /* Ensure the text is black */
+}
+
+.overlay_content h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: white; /* Ensure the text is black */
+}
+
+.overlay_content button {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.overlay_content button svg {
+  margin-right: 8px;
+}
